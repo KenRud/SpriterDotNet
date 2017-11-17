@@ -92,7 +92,7 @@ namespace SpriterDotNet.MonoGame
         /// <summary>
         /// Draws the animation with the given SpriteBatch.
         /// </summary>
-        public virtual void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(ISpriteBatch spriteBatch)
         {
             for (int i = 0; i < DrawInfos.Count; ++i)
             {

@@ -12,6 +12,6 @@ namespace SpriterDotNet.MonoGame
     {
         float Width { get; }
         float Height { get; }
-        void Draw(SpriteBatch spriteBatch, Vector2 pivot, Vector2 position, Vector2 scale, float rotation, Color color, float depth);
+        void Draw(ISpriteBatch spriteBatch, Vector2 pivot, Vector2 position, Vector2 scale, float rotation, Color color, float depth);
     }
 }

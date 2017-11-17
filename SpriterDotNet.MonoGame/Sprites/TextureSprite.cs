@@ -24,7 +24,7 @@ namespace SpriterDotNet.MonoGame.Sprites
             this.texture = texture;
         }
 
-        public void Draw(SpriteBatch spriteBatch, Vector2 pivot, Vector2 position, Vector2 scale, float rotation, Color color, float depth)
+        public void Draw(ISpriteBatch spriteBatch, Vector2 pivot, Vector2 position, Vector2 scale, float rotation, Color color, float depth)
         {
             SpriteEffects effects = SpriteEffects.None;
 
@@ -46,7 +46,7 @@ namespace SpriterDotNet.MonoGame.Sprites
             scale = new Vector2(Math.Abs(scale.X), Math.Abs(scale.Y));
             Vector2 origin = new Vector2(originX, originY);
 
-            spriteBatch.Draw(texture, position, null, color, rotation, origin, scale, effects, depth);
+            spriteBatch.Draw(texture, position, color, rotation, origin, scale, effects, depth);
         }
     }
 }

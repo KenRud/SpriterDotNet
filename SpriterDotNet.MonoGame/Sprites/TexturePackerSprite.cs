@@ -42,7 +42,7 @@ namespace SpriterDotNet.MonoGame.Sprites
             this.trimBottom = trimBottom;
         }
 
-        public void Draw(SpriteBatch spriteBatch, Vector2 pivot, Vector2 position, Vector2 scale, float rotation, Color color, float depth)
+        public void Draw(ISpriteBatch spriteBatch, Vector2 pivot, Vector2 position, Vector2 scale, float rotation, Color color, float depth)
         {
             bool flipX = scale.X < 0;
             bool flipY = scale.Y < 0;
